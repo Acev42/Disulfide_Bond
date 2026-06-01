@@ -1,0 +1,13 @@
+biotite==1.4.0
+einops==0.8.1
+h5py==3.14.0
+numpy==2.4.1
+pandas==3.0.0
+pytorch_lightning==2.5.6
+torch==2.8.0
+torch_geometric==2.7.0
+torchmetrics==1.8.2
+tqdm==4.66.5
+esm==3.2.0
+
+
