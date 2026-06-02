@@ -60,4 +60,11 @@ bash disulfide.sh [options]
 bash disulfide.sh --index 1234 --input ./1AHO.pdb --output ./result --threshold 0.6
 ````
 
+## Model performance
 
+After setting the positive sample weight for the cross-entropy function (determined by the ratio of the number of negative samples to positive samples), the model's performance after one epoch of training is as follows:
+
+-Accuracy: 99.0%
+-False Positive Rate: 0.86%
+-False Negative Rate: 15.2%
+-AUC-ROC: 0.991
