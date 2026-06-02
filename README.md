@@ -12,7 +12,7 @@
 
 
 
-# Installation
+## Installation
 Step 1: Create conda environment
 
 ```` 
@@ -28,7 +28,7 @@ Step 3: Install dependencies
 pip install -r requirements.txt
 ````
 
-# Usage
+## Usage
 
 Use run.py or disulfide.sh with the same arguments.
 
@@ -41,7 +41,7 @@ bash disulfide.sh [options]
 ````
 
 
-# Arguments
+## Arguments
 | Argument      | Description                                                 | Default                             |
 | ------------- | ----------------------------------------------------------- |-------------------------------------|
 | `--index`     | Index of the input file for prediction                      | `None`                               |
@@ -55,7 +55,7 @@ bash disulfide.sh [options]
 | `--pdb`       | PDB ID (optional, for reference only)                       | None                                |
 | `--chain`     | Chain ID (optional)                                         | None                                |
 
-# Example
+## Example
 ````
 bash disulfide.sh --index 1234 --input ./1AHO.pdb --output ./result --threshold 0.6
 ````
