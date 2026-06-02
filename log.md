@@ -26,7 +26,7 @@ Edge construction: Ca distance threshold 10A
 
 `message = MLP(target node feature, edge feature, geometric feature)`
 
-`attention =MLP(source node, target node, edge feature, geometric feature)`
+`attention = MLP(source node, target node, edge feature, geometric feature)`
 
 `out = message * attention`
 
