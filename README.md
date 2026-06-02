@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 # Usage
 
-Use run.py Or disulfide.sh with the same arguments.
+Use run.py or disulfide.sh with the same arguments.
 
 To avoid replication, here show the method of using sh script.
 
