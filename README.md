@@ -1,5 +1,5 @@
 # Disulfide Bond Prediction
-# Note of Attention
+## Note of Attention
 -The `src` directory contains the model weights(not uploaded yet), model architecture, and auxiliary scripts. Both run.py and disulfide.sh in the `disulfide` directory are functional. For proper execution of ESM, the scripts must be run from within the `disulfide` directory.
 
 -The `README.md` file provides detailed instructions on how to use the tool.
