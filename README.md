@@ -1,4 +1,17 @@
 # Disulfide Bond Prediction
+# Note of Attention
+-The `src` directory contains the model weights(not uploaded yet), model architecture, and auxiliary scripts. Both run.py and disulfide.sh in the `disulfide` directory are functional. For proper execution of ESM, the scripts must be run from within the `disulfide` directory.
+
+-The `README.md` file provides detailed instructions on how to use the tool.
+
+-The `log.md` file explains the architecture and workflow of this model.
+
+-The `requirements.txt` file has been tested and verified to work correctly.
+
+-The `data/weights` directory is intended to contain the pretrained ESM-C model weight files.
+
+
+
 # Installation
 Step 1: Create conda environment
 
@@ -47,14 +60,4 @@ bash disulfide.sh [options]
 bash disulfide.sh --index 1234 --input ./1AHO.pdb --output ./result --threshold 0.6
 ````
 
-# Note of Attention
--The `src` directory contains the model weights(not uploaded yet), model architecture, and auxiliary scripts. Both run.py and disulfide.sh in the `disulfide` directory are functional. For proper execution of ESM, the scripts must be run from within the `disulfide` directory.
-
--The `README.md` file provides detailed instructions on how to use the tool.
-
--The `log.md` file explains the architecture and workflow of this model.
-
--The `requirements.txt` file has been tested and verified to work correctly.
-
--The `data/weights` directory is intended to contain the pretrained ESM-C model weight files.
 
