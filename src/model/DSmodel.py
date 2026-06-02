@@ -16,21 +16,6 @@ def check_nan(x,name):
     has_nan = torch.isnan(x).any()
     print(f"{name} Has NaN: {has_nan}")
 
-
-class FocalLoss(nn.Module):
-    def __init__(self, alpha=0.8, gamma=2.0):
-        super().__init__()
-        self.alpha = alpha
-        self.gamma = gamma
-
-    def forward(self, input, target):
-        BCE_loss = F.binary_cross_entropy_with_logits(input=input, target=target, reduction='none')
-        pt = torch.exp(-BCE_loss)
-        focal_loss = self.alpha * (1 - pt) ** self.gamma * BCE_loss
-        return focal_loss.mean()
-
-
-
 class DSgraphLayer(nn.Module):
     def __init__(self, edge_dim, hidden_dim, node_dim,n_head):
         super().__init__()
