@@ -1,6 +1,6 @@
 # Model workflow
 - Read `.pdb` or `.cif` file and extract amino acids sequences from specific chains.
-- Identify heavy atoms in backbone (i.e. C,O,N,Ca and Cb) and write down their coordinations `[n,5,3]`.  (`n` stands for the number of AAS)
+- Identify heavy atoms in backbone (i.e. C,O,N,Ca and Cb) and write down their coordinations `[n,5,3]`.  (`n` stands for the number of AAs)
 - AAs sequences `[n,]` -> ESM-C -> embedding `[n,960,]`
 - Embedding, coordination -> MPNNs feature construction
 - Graph building (DSgraphlayer * N)
@@ -12,7 +12,7 @@
 -`pc25.0_res0.0-2.5_len40-10000_R0.3_Xray_d2025_06_02_chains11750` 25% clustered, resolution 0-0.25 A, R_factor <0.3, length 40-10000
 - Download `.cif` file from PDBbank
 - Identify all the disulfide bonds in primitive dataset, and write down the distances of Cys Ca atoms. Get the average disulfide bond length.
-- Positive samples：(Cys_i,Cys_j,1) forming native disulfide bond (ProteinMPNN is utilized to convert CYS into other possible amino acids)
+- Positive samples：(Cys_i,Cys_j,1) forming native disulfide bond (ProteinMPNN is utilized to convert Cys into other possible AAs)
 - Negative samples:(AA_i,AA_j,0) Candidate residue pairs not forming disulfide bond 
 
 # MPNN architecture
