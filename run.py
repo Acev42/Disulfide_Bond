@@ -140,13 +140,13 @@ class ProteinProcessor:
         chain_ids = list(sequences.keys())
         lengths = [len(seq) for seq in sequences.values()]
 
-        # 序列化数据
+
         byte_chains = np.void(pickle.dumps(chain_ids))
         byte_len = np.void(pickle.dumps(lengths))
         byte_backbone = np.void(pickle.dumps(backbone))
         byte_sequences = np.void(pickle.dumps(sequences))
 
-        # 保存为H5文件
+        
         h5_path = os.path.join(save_dir, f'{pdb_id}.h5')
         with h5py.File(h5_path, 'w') as f:
             f.create_dataset('chain_ids', data=byte_chains)
@@ -226,13 +226,14 @@ class ProteinProcessor:
         dataset = DSDataset(csv_dir=csv_path,esm_dir=esm_dir,h5_dir=h5_dir,predict=True)
         data_loader = DataLoader(dataset, batch_size=1, shuffle=False,collate_fn=dataset.collate_fn)
 
-        # 加载模型
+        
         if model_path and os.path.exists(model_path):
             model = DS.load_from_checkpoint(model_path,strict=False)
         else:
             print('model path does not exist')
             raise OSError
-        # 设置训练器
+
+               
         trainer = pl.Trainer(
             devices='auto',
             precision='64',
