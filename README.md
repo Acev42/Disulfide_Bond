@@ -59,6 +59,9 @@ bash disulfide.sh [options]
 ````
 bash disulfide.sh --index 1234 --input ./1AHO.pdb --output ./result --threshold 0.6
 ````
+````
+1234_1AHO_results.csv
+````
 
 ## Model performance
 
