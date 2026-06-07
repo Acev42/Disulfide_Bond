@@ -59,9 +59,11 @@ bash disulfide.sh [options]
 ````
 bash disulfide.sh --index 1234 --input ./1AHO.pdb --output ./result --threshold 0.6
 ````
-````
-1234_1AHO_results.csv
-````
+output:1234_1AHO_results.csv
+| residue1 id | residue1 name | residue2 id | residue2 name | probability | pdb_id | chain |
+|-------------|---------------|-------------|---------------|-------------|--------|-------|
+| 31          | GLY           | 48          | CYS           | 0.7384205880050742 | 1AHO | A |
+| 34          | GLY           | 48          | CYS           | 0.5725554322907841 | 1AHO | A |
 
 ## Model performance
 
