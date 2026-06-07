@@ -8,7 +8,7 @@
 
 -The `requirements.txt` file has been tested and verified to work correctly.
 
--The `data/weights` directory is intended to contain the pretrained ESM-C model weight files.
+-The `data/weights` directory is intended to contain the pretrained ESM-C model weight files.(https://huggingface.co/EvolutionaryScale/esmc-300m-2024-12)
 
 
 
