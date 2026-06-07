@@ -52,8 +52,8 @@ bash disulfide.sh [options]
 | `--model`     | Path to the pretrained model checkpoint                     | `./src/model/Disulfide_searching.ckpt` |
 | `--threshold` | Probability threshold for disulfide bond prediction         | `0.5`                               |
 | `--filetype`  | Input structure format: `PDB` or `CIF`                      | `PDB`                               |
-| `--pdb`       | PDB ID (optional, for reference only)                       | None                                |
-| `--chain`     | Chain ID (optional)                                         | None                                |
+| `--pdb`       | PDB ID (optional, for reference only)                       | `None`                                |
+| `--chain`     | Chain ID (optional)                                         | `None`                                |
 
 ## Example
 ````
