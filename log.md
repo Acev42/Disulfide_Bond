@@ -1,6 +1,6 @@
 # Model workflow
 - Read `.pdb` or `.cif` file and extract amino acids sequences from specific chains.
-- Identify heavy atoms in bacbbone (i.e. C,CB,O,N,CA) and write down their coordinations `[n,5,3]`.  (`n` stands for the number of AAS)
+- Identify heavy atoms in backbone (i.e. C,O,N,Ca and Cb) and write down their coordinations `[n,5,3]`.  (`n` stands for the number of AAS)
 - AAs sequences `[n,]` -> ESM-C -> embedding `[n,960,]`
 - Embedding, coordination -> MPNNs feature construction
 - Graph building (DSgraphlayer * N)
