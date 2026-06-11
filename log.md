@@ -12,8 +12,8 @@
 -`pc25.0_res0.0-2.5_len40-10000_R0.3_Xray_d2025_06_02_chains11750` 25% clustered, resolution 0-0.25 A, R_factor <0.3, length 40-10000
 - Download `.cif` file from PDBbank
 - Identify all the disulfide bonds in primitive dataset, and write down the distances of Cys Ca atoms. Get the average disulfide bond length.
-- Positive samples：(Cys_i,Cys_j,1) forming native disulfide bond (ProteinMPNN is utilized to convert Cys into other possible AAs)
-- Negative samples:(AA_i,AA_j,0) Candidate residue pairs not forming disulfide bond 
+- Positive samples：(inedx_Cys_i, index_Cys_j, 1) forming native disulfide bond (ProteinMPNN is utilized to convert Cys into other possible AAs)
+- Negative samples:(index_AA_i, index_AA_j, 0) Candidate residue pairs not forming disulfide bond but Ca distance close to disulfide bond
 
 # MPNN architecture
 Edge construction: Ca distance threshold 10A
